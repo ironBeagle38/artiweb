@@ -1,0 +1,57 @@
+{
+  "include": [
+    "./vite.config.*",
+    "./assets/admin/**/*",
+    "./assets/admin/**/*.vue",
+    "./assets/admin/themeConfig.js"
+  ],
+  "exclude": [
+    "./dist",
+    "./node_modules"
+  ],
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "jsx": "preserve",
+    "paths": {
+      "@/*": [
+        "./assets/admin/*"
+      ],
+      "@themeConfig": [
+        "./assets/admin/themeConfig.js"
+      ],
+      "@layouts/*": [
+        "./assets/admin/@layouts/*"
+      ],
+      "@layouts": [
+        "./assets/admin/@layouts"
+      ],
+      "@core/*": [
+        "./assets/admin/@core/*"
+      ],
+      "@core": [
+        "./assets/admin/@core"
+      ],
+      "@images/*": [
+        "./assets/admin/assets/images/*"
+      ],
+      "@styles/*": [
+        "./assets/admin/assets/styles/*"
+      ],
+      "@validators": [
+        "./assets/admin/@core/utils/validators"
+      ],
+      "@db/*": [
+        "./assets/admin/plugins/fake-api/handlers/*"
+      ],
+      "@api-utils/*": [
+        "./assets/admin/plugins/fake-api/utils/*"
+      ]
+    },
+    "types": [
+      "vite/client",
+      "vite-plugin-vue-layouts/client"
+    ]
+  }
+}

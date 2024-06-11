@@ -1,0 +1,10 @@
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
+
+login:
+    path: /api/login
+    controller: lexik_jwt_authentication.handler.authentication_success
+    methods: POST
